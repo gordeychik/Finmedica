@@ -78,16 +78,30 @@ $(".important__slids").slick({
     nextArrow: $(".partners__slider").find(".partners-next"),
     prevArrow: $(".partners__slider").find(".partners-prev"),
     responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 5,
-          slidesToScroll: 1,
-          adaptiveHeight: true
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+            }
         },
-      },
-    ],
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 570,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
 });
+
 
 
 
